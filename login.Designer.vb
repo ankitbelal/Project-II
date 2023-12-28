@@ -32,7 +32,6 @@ Partial Class login
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -118,7 +117,7 @@ Partial Class login
         defaultpasspanel.Controls.Add(Label6)
         defaultpasspanel.Controls.Add(Label5)
         defaultpasspanel.Controls.Add(Label4)
-        defaultpasspanel.Location = New Point(359, 36)
+        defaultpasspanel.Location = New Point(424, 21)
         defaultpasspanel.Name = "defaultpasspanel"
         defaultpasspanel.Size = New Size(656, 883)
         defaultpasspanel.TabIndex = 12
@@ -220,7 +219,6 @@ Partial Class login
         ' 
         Guna2CirclePictureBox2.BackColor = Color.Transparent
         Guna2CirclePictureBox2.FillColor = Color.Transparent
-        Guna2CirclePictureBox2.Image = CType(resources.GetObject("Guna2CirclePictureBox2.Image"), Image)
         Guna2CirclePictureBox2.ImageRotate = 0F
         Guna2CirclePictureBox2.Location = New Point(228, 222)
         Guna2CirclePictureBox2.Name = "Guna2CirclePictureBox2"
@@ -332,7 +330,6 @@ Partial Class login
         Guna2PictureBox2.BackColor = Color.Transparent
         Guna2PictureBox2.CustomizableEdges = CustomizableEdges14
         Guna2PictureBox2.FillColor = Color.Transparent
-        Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), Image)
         Guna2PictureBox2.ImageRotate = 0F
         Guna2PictureBox2.Location = New Point(478, 489)
         Guna2PictureBox2.Name = "Guna2PictureBox2"
@@ -372,7 +369,6 @@ Partial Class login
         Guna2PictureBox1.BackColor = Color.Transparent
         Guna2PictureBox1.CustomizableEdges = CustomizableEdges18
         Guna2PictureBox1.FillColor = Color.Transparent
-        Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
         Guna2PictureBox1.ImageRotate = 0F
         Guna2PictureBox1.Location = New Point(478, 422)
         Guna2PictureBox1.Name = "Guna2PictureBox1"
@@ -397,7 +393,6 @@ Partial Class login
         ' Guna2CirclePictureBox1
         ' 
         Guna2CirclePictureBox1.BackColor = Color.Transparent
-        Guna2CirclePictureBox1.Image = CType(resources.GetObject("Guna2CirclePictureBox1.Image"), Image)
         Guna2CirclePictureBox1.ImageRotate = 0F
         Guna2CirclePictureBox1.Location = New Point(592, 36)
         Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
@@ -422,11 +417,9 @@ Partial Class login
         ' hidepassbtn
         ' 
         hidepassbtn.BackColor = Color.White
-        hidepassbtn.BackgroundImage = CType(resources.GetObject("hidepassbtn.BackgroundImage"), Image)
         hidepassbtn.BackgroundImageLayout = ImageLayout.Stretch
         hidepassbtn.CheckedState.ImageSize = New Size(64, 64)
         hidepassbtn.HoverState.ImageSize = New Size(64, 64)
-        hidepassbtn.Image = CType(resources.GetObject("hidepassbtn.Image"), Image)
         hidepassbtn.ImageOffset = New Point(0, 0)
         hidepassbtn.ImageRotate = 0F
         hidepassbtn.ImageSize = New Size(40, 40)
@@ -440,11 +433,9 @@ Partial Class login
         ' showpassbtn
         ' 
         showpassbtn.BackColor = Color.White
-        showpassbtn.BackgroundImage = CType(resources.GetObject("showpassbtn.BackgroundImage"), Image)
         showpassbtn.BackgroundImageLayout = ImageLayout.Stretch
         showpassbtn.CheckedState.ImageSize = New Size(40, 40)
         showpassbtn.HoverState.ImageSize = New Size(64, 64)
-        showpassbtn.Image = CType(resources.GetObject("showpassbtn.Image"), Image)
         showpassbtn.ImageOffset = New Point(0, 0)
         showpassbtn.ImageRotate = 0F
         showpassbtn.ImageSize = New Size(40, 40)

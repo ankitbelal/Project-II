@@ -128,7 +128,7 @@ Partial Class forget_password
         changepasswordpanel.Controls.Add(Label4)
         changepasswordpanel.Controls.Add(confirmpassbtn)
         changepasswordpanel.Controls.Add(changepassbox)
-        changepasswordpanel.Location = New Point(311, 32)
+        changepasswordpanel.Location = New Point(373, 17)
         changepasswordpanel.Name = "changepasswordpanel"
         changepasswordpanel.Size = New Size(715, 952)
         changepasswordpanel.TabIndex = 16

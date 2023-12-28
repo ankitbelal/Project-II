@@ -22,6 +22,7 @@ Partial Class student
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -58,7 +59,7 @@ Partial Class student
         Studentmainpanel = New Guna.UI2.WinForms.Guna2GradientPanel()
         stdtxtclearbtn = New Guna.UI2.WinForms.Guna2Button()
         Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        stdsavercodbtn = New Guna.UI2.WinForms.Guna2Button()
         Addnewrecordbtn = New Guna.UI2.WinForms.Guna2Button()
         Stdgradebox = New Guna.UI2.WinForms.Guna2ComboBox()
         Stddobbox = New Guna.UI2.WinForms.Guna2DateTimePicker()
@@ -84,16 +85,19 @@ Partial Class student
         Label4 = New Label()
         Label1 = New Label()
         OpenFileDialog1 = New OpenFileDialog()
+        Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(components)
         Studentmainpanel.SuspendLayout()
         CType(profilebox, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Studentmainpanel
         ' 
+        Studentmainpanel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        Studentmainpanel.AutoSize = True
         Studentmainpanel.BackColor = Color.Transparent
         Studentmainpanel.Controls.Add(stdtxtclearbtn)
         Studentmainpanel.Controls.Add(Guna2Button3)
-        Studentmainpanel.Controls.Add(Guna2Button2)
+        Studentmainpanel.Controls.Add(stdsavercodbtn)
         Studentmainpanel.Controls.Add(Addnewrecordbtn)
         Studentmainpanel.Controls.Add(Stdgradebox)
         Studentmainpanel.Controls.Add(Stddobbox)
@@ -121,10 +125,10 @@ Partial Class student
         Studentmainpanel.CustomizableEdges = CustomizableEdges31
         Studentmainpanel.FillColor = Color.RosyBrown
         Studentmainpanel.FillColor2 = Color.LightSeaGreen
-        Studentmainpanel.Location = New Point(12, 2)
+        Studentmainpanel.Location = New Point(0, 0)
         Studentmainpanel.Name = "Studentmainpanel"
         Studentmainpanel.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        Studentmainpanel.Size = New Size(1418, 965)
+        Studentmainpanel.Size = New Size(1454, 941)
         Studentmainpanel.TabIndex = 0
         ' 
         ' stdtxtclearbtn
@@ -170,26 +174,26 @@ Partial Class student
         Guna2Button3.TabIndex = 30
         Guna2Button3.Text = "Back"
         ' 
-        ' Guna2Button2
+        ' stdsavercodbtn
         ' 
-        Guna2Button2.AutoRoundedCorners = True
-        Guna2Button2.BorderRadius = 26
-        Guna2Button2.BorderThickness = 1
-        Guna2Button2.CustomizableEdges = CustomizableEdges5
-        Guna2Button2.DisabledState.BorderColor = Color.DarkGray
-        Guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2Button2.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2Button2.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2Button2.FillColor = Color.DarkCyan
-        Guna2Button2.FocusedColor = Color.FromArgb(CByte(255), CByte(192), CByte(192))
-        Guna2Button2.Font = New Font("Segoe UI", 9F)
-        Guna2Button2.ForeColor = Color.White
-        Guna2Button2.Location = New Point(594, 814)
-        Guna2Button2.Name = "Guna2Button2"
-        Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2Button2.Size = New Size(189, 55)
-        Guna2Button2.TabIndex = 29
-        Guna2Button2.Text = "Save"
+        stdsavercodbtn.AutoRoundedCorners = True
+        stdsavercodbtn.BorderRadius = 26
+        stdsavercodbtn.BorderThickness = 1
+        stdsavercodbtn.CustomizableEdges = CustomizableEdges5
+        stdsavercodbtn.DisabledState.BorderColor = Color.DarkGray
+        stdsavercodbtn.DisabledState.CustomBorderColor = Color.DarkGray
+        stdsavercodbtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        stdsavercodbtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        stdsavercodbtn.FillColor = Color.DarkCyan
+        stdsavercodbtn.FocusedColor = Color.FromArgb(CByte(255), CByte(192), CByte(192))
+        stdsavercodbtn.Font = New Font("Segoe UI", 9F)
+        stdsavercodbtn.ForeColor = Color.White
+        stdsavercodbtn.Location = New Point(594, 814)
+        stdsavercodbtn.Name = "stdsavercodbtn"
+        stdsavercodbtn.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        stdsavercodbtn.Size = New Size(189, 55)
+        stdsavercodbtn.TabIndex = 29
+        stdsavercodbtn.Text = "Save"
         ' 
         ' Addnewrecordbtn
         ' 
@@ -266,10 +270,10 @@ Partial Class student
         profilebox.CustomizableEdges = CustomizableEdges13
         profilebox.FillColor = Color.Transparent
         profilebox.ImageRotate = 0F
-        profilebox.Location = New Point(579, 125)
+        profilebox.Location = New Point(580, 129)
         profilebox.Name = "profilebox"
         profilebox.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        profilebox.Size = New Size(204, 238)
+        profilebox.Size = New Size(204, 234)
         profilebox.SizeMode = PictureBoxSizeMode.StretchImage
         profilebox.TabIndex = 24
         profilebox.TabStop = False
@@ -581,7 +585,7 @@ Partial Class student
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Showcard Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(503, 37)
+        Label1.Location = New Point(490, 26)
         Label1.Name = "Label1"
         Label1.Size = New Size(358, 60)
         Label1.TabIndex = 0
@@ -591,18 +595,30 @@ Partial Class student
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
+        ' Guna2Elipse1
+        ' 
+        Guna2Elipse1.TargetControl = Studentmainpanel
+        ' 
         ' student
         ' 
         AutoScaleDimensions = New SizeF(192F, 192F)
         AutoScaleMode = AutoScaleMode.Dpi
-        ClientSize = New Size(1435, 982)
+        AutoSize = True
+        ClientSize = New Size(1454, 941)
+        ControlBox = False
         Controls.Add(Studentmainpanel)
+        FormBorderStyle = FormBorderStyle.None
+        MaximizeBox = False
+        MdiChildrenMinimizedAnchorBottom = False
+        MinimizeBox = False
         Name = "student"
+        StartPosition = FormStartPosition.Manual
         Text = "student"
         Studentmainpanel.ResumeLayout(False)
         Studentmainpanel.PerformLayout()
         CType(profilebox, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Studentmainpanel As Guna.UI2.WinForms.Guna2GradientPanel
@@ -626,12 +642,13 @@ Partial Class student
     Friend WithEvents Stdparentnamebox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Stdfnamebox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents imageholderstudent As TextBox
-    Friend WithEvents profilebox As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Stddobbox As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents Stdgradebox As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Addnewrecordbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents stdsavercodbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents stdtxtclearbtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents profilebox As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
 End Class
